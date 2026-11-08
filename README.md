@@ -111,17 +111,6 @@ cd backend\fintech
 .\mvnw.cmd test
 ```
 
-## Banco de dados
-
-O script [limpar-dados.sql](backend/fintech/database/limpar-dados.sql) remove os dados respeitando a ordem de dependência entre as tabelas. Execute-o somente no schema Oracle correto e após realizar um backup, quando necessário.
-
-## Segurança e publicação
-
-- nunca publique senhas, tokens ou arquivos `.env`;
-- mantenha as credenciais Oracle apenas em variáveis de ambiente;
-- a pasta `frontend/node_modules` não deve ser versionada;
-- as pastas `frontend/dist` e `backend/fintech/target` são geradas durante o build e também estão no `.gitignore`.
-
 ## Licença
 
 Projeto desenvolvido para fins acadêmicos e de portfólio.
